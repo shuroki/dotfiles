@@ -1,0 +1,39 @@
+# themes : https://github.com/alacritty/alacritty-theme
+import = ["~/.config/alacritty/themes/themes/nord.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+# 窗口
+[window]
+# 透明度
+opacity = 0.6
+dimensions = { columns = 120, lines = 30}
+padding = { x = 20, y = 10}
+
+# 字体
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+size = 16
+
+# 光标
+[cursor]
+style = { shape = "Block", blinking = "On"}
+
+# 快捷键
+[keyboard]
+bindings = [
+    { key = "PageUp", action = "ScrollPageUp" },
+    { key = "PageDown", action = "ScrollPageDown" },
+    { key = "Home", action = "ScrollToTop" },
+    { key = "End", action = "ScrollToBottom" },
+]
+
+[mouse]
+bindings = [
+    { mouse = 5, mods = "Control", action = "IncreaseFontSize" },
+    { mouse = 4, mods = "Control", action = "DecreaseFontSize" },
+]

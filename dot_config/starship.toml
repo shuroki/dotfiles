@@ -1,0 +1,290 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+format = """
+[󱢇](red) $username@$hostname \\[at $directory\\] \
+(\\[$docker_context\\])\
+(\\[$package\\])\
+(\\[$c\\])\
+(\\[$cmake\\])\
+(\\[$dotnet\\])\
+(\\[$elixir\\])\
+(\\[$erlang\\])\
+(\\[$golang\\])\
+(\\[$guix_shell\\])\
+(\\[$haskell\\])\
+(\\[$haxe\\])\
+(\\[$helm\\])\
+(\\[$java\\])\
+(\\[$julia\\])\
+(\\[$kotlin\\])\
+(\\[$gradle\\])\
+(\\[$lua\\])\
+(\\[$nim\\])\
+(\\[$nodejs\\])\
+(\\[$ocaml\\])\
+(\\[$opa\\])\
+(\\[$perl\\])\
+(\\[$php\\])\
+(\\[$pulumi\\])\
+(\\[$purescript\\])\
+(\\[$python\\])\
+(\\[$raku\\])\
+(\\[$rlang\\])\
+(\\[$red\\])\
+(\\[$ruby\\])\
+(\\[$rust\\])\
+(\\[$scala\\])\
+(\\[$solidity\\])\
+(\\[$swift\\])\
+$fill \
+($status)($cmd_duration)\
+([\\[ ($git_branch)($git_commit)($git_status)($git_state) \\]]() )\
+($jobs)$time \
+$line_break\
+$character"""
+
+[username]
+disabled = false
+show_always = true
+style_user = "bold white"
+style_root = "bold red"
+format = "[$user]($style) "
+
+
+[hostname]
+disabled = false
+style = "bold #7E8B92"
+format = "[$hostname]($style)"
+ssh_only = false
+trim_at = ".companyname.com"
+
+[localip]
+disabled = false
+ssh_only = false
+style = "bold cyan"
+format = "[$localipv4]($style)"
+
+[character]
+# 将 'success_symbol' 片段设置成颜色为 'bold green' 的 '➜'  
+# success_symbol = '[➜](bold green)'
+success_symbol = "[曰:](bold green) "
+
+[fill]
+symbol = " "
+style = ""
+
+[time]
+disabled = false
+format = '[$time]($style) '
+
+
+[status]
+style = ''
+symbol = '🔴 '
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = false
+disabled = false
+
+[git_commit]
+commit_hash_length = 7
+tag_disabled = false
+style = ""
+format = "[$hash($tag)]($style)"
+tag_symbol = ' 🏷 '
+
+[git_status]
+disabled = false
+format = "[ $all_status$ahead_behind]()"
+# 未追踪
+untracked = "[?$count](red)"
+# 提交的
+staged = "[A$count](green)"
+# 修改的
+modified = "[M$count](yellow)"
+# 删除的
+deleted = "[D$count](purple)"
+# 冲突的
+conflicted = "[C$count](red)"
+# 暂存
+stashed = '[\$$count](green)'
+
+[git_state]
+format = '[\( $state( $progress_current of $progress_total) \)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+disabled = false
+truncation_length = 10
+truncate_to_repo = false
+home_symbol = "~"
+read_only = "󰌾"
+read_only_style = "red"
+style = "bold cyan"
+format = "[$path]($style)( [$read_only]($read_only_style))"
+
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+always_show_remote = true
+ignore_branches = []
+style = ""
+format = "[$symbol$branch(:$remote_branch)]($style)"
+
+[golang]
+symbol = ""
+style = "bold cyan"
+format = "via [$symbol $version( - $mod_version)]($style)"
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+disabled = false
+symbol = "󰏗 "
+style = "bold 208"
+format = "via [$symbol $version]($style)"
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
