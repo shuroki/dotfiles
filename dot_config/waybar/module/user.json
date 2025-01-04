@@ -1,0 +1,11 @@
+{
+    "user": {
+        "format": "{user} (up {work_d} days ↑)",
+        "tooltip-format": "123",
+        "avatar":"/home/shuroki/Pictures/avatar.png",
+        "interval": 60,
+        "on-click":"waypaper --random",
+        "open-on-click" : true,
+        "icon": true
+    }
+}

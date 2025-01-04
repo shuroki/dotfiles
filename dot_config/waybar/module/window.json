@@ -1,0 +1,10 @@
+{
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) — Chrome": "$1",
+            "(.*) - wezterm": "> [$1]"
+        },
+        "separate-outputs": true
+    }
+}

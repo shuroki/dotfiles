@@ -1,0 +1,45 @@
+{
+    "reload_style_on_change": true,
+    "output": "HDMI-A-1",
+    "height": 14,
+    "width": 0,
+    "layer": "top",
+    "position": "top",
+    "margin": "0px 0px 0px 0px",
+    "include": [
+        "/home/shuroki/.config/waybar/module/workspace.json",
+        "/home/shuroki/.config/waybar/module/window.json",
+        "/home/shuroki/.config/waybar/module/temperature.json",
+        "/home/shuroki/.config/waybar/module/battery.json",
+        "/home/shuroki/.config/waybar/module/pulseaudio.json",
+        "/home/shuroki/.config/waybar/module/backlight.json",
+        "/home/shuroki/.config/waybar/module/cpu.json",
+        "/home/shuroki/.config/waybar/module/network.json",
+        "/home/shuroki/.config/waybar/module/memory.json",
+        "/home/shuroki/.config/waybar/module/clock.json",
+        "/home/shuroki/.config/waybar/module/disk.json",
+        "/home/shuroki/.config/waybar/module/weather.json",
+        "/home/shuroki/.config/waybar/module/logo.json",
+        "/home/shuroki/.config/waybar/module/tray.json"
+    ],
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/weather"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "network",
+        "disk",
+        "memory",
+        "cpu",
+        "temperature",
+        "battery",
+        "tray"
+    ]
+}

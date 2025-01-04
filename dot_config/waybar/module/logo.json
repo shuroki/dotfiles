@@ -1,0 +1,8 @@
+{
+    "custom/logo": {
+        "format": "  ",
+        "tooltip": true,
+        "interval": 3600,
+        "on-click": "waypaper --random"
+    }
+}

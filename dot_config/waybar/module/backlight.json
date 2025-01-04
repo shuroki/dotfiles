@@ -1,0 +1,19 @@
+{
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}  {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "on-scroll-up": "/bin/bash $HOME/.config/waybar/module/backlight.sh + 5",
+        "on-scroll-down": "/bin/bash $HOME/.config/waybar/module/backlight.sh - 5"
+    }
+}

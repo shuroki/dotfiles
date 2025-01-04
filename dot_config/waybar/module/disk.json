@@ -1,0 +1,9 @@
+{
+    "disk": {
+        "interval": 30,
+        "path": "/",
+        "unit": "GB",
+        "format": "  {percentage_used}%",
+        "tooltip-format": "路径:\t{path}\n已使用:\t{used} | {specific_used}GB\n剩余:\t{free} | {specific_free}GB\n共计:\t{total} | {specific_total}GB"
+    }
+}

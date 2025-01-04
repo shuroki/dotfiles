@@ -1,0 +1,26 @@
+{
+    "pulseaudio": {
+        "format": "{icon}   {volume}% {format_source}",
+        "format-alt-click": "click-right",
+        "format-bluetooth": "",
+        "format-muted": "  {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "tooltip-format": "{volume}",
+        "scroll-step": 5,
+        "on-click": "exec pavucontrol",
+        "states": {
+            "low": 0,
+            "mid": 25,
+            "high": 75
+        }
+    }
+}

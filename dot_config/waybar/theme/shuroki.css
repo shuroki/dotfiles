@@ -1,0 +1,163 @@
+/* @import "oxocarbon.css"; */
+/* @import "mocha.css"; */
+/* @import "gruvbox.css"; */
+
+@import "../color/catppuccin-mocha.css";
+
+@define-color pulseaudio @blue;
+@define-color battery @green;
+@define-color clock @teal;
+@define-color network @peach;
+@define-color cpu @pink;
+@define-color memory @flamingo;
+@define-color disk @rosewater;
+@define-color temperature @maroon;
+@define-color backlight @yellow;
+@define-color wireplumber @blue;
+@define-color tray @lavender;
+@define-color weather @sapphire;
+
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 0.9rem;
+    min-height: 0;
+    font-weight: bold;
+}
+
+/* waybar */
+window#waybar {
+    color: @text;
+    background: transparent;
+    background-color: @background;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+/* 窗口标题栏 */
+
+#window {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: @subtext;
+    background-color: @surface2;
+}
+
+
+/* 工作区wrapper */
+#workspaces {
+    /* background-color: ; */
+    color: @text;
+}
+
+/* 工作区通用 */
+#workspaces button {
+    border-radius: 0;
+    padding: 0 0.2rem;
+    margin: 0.25rem;
+    color: @subtext;
+}
+
+/* 活动工作区 */
+#workspaces button.active {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+/* 警告工作区 */
+#workspaces button.urgent {
+    color: @red;
+    border-bottom: 2px solid @red;
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#mode,
+#network,
+#custom-weather,
+#scratchpad {
+    border-bottom: 2px solid;
+    margin: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#custom-weather {
+    color: @weather;
+    border-bottom-color: @weather;
+}
+
+#user {
+    color: @subtext;
+}
+
+#battery {
+    color: @battery;
+    border-bottom-color: @battery;
+}
+
+
+#clock {
+    color: @clock;
+    border-bottom-color: @clock;
+}
+
+#pulseaudio {
+    color: @pulseaudio;
+    border-bottom-color: @pulseaudio;
+}
+
+#network {
+    color: @network;
+    border-bottom-color: @network;
+}
+
+#cpu {
+    color: @cpu;
+    border-bottom-color: @cpu;
+}
+
+#memory {
+    color: @memory;
+    border-bottom-color: @memory;
+}
+
+#disk {
+    color: @disk;
+    border-bottom-color: @disk;
+}
+
+#temperature {
+    color: @temperature;
+    border-bottom-color: @temperature;
+}
+
+#backlight {
+    color: @backlight;
+    border-bottom-color: @backlight;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @battery;
+    border-bottom-color: @battery;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 10px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 2px;
+}

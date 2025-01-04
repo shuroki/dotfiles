@@ -1,0 +1,7 @@
+{
+    "memory": {
+        "interval": 3,
+        "format": "   {percentage}% | {swapPercentage}%",
+        "tooltip-format": "<table></table>单位GB        已使用        剩余        总共\n内存           {used}        {avail}        {total}\n交换分区       {swapUsed}    {swapAvail}    {swapTotal}"
+    }
+}

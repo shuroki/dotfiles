@@ -1,0 +1,8 @@
+{
+    "user": {
+        "format": "[{user} 已过载{work_d}天{work_H}小时{work_M}分{work_S}秒]",
+        "interval": 1,
+        "on-click":"waypaper --random",
+        "icon": false
+    }
+}

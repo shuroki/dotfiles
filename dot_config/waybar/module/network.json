@@ -1,0 +1,13 @@
+{
+    "network": {
+        "interval": 3,
+        "format-wifi": "󰀂  {essid} ⬇{bandwidthDownBytes} ⬆{bandwidthUpBytes} ",
+        "tooltip-format-wifi": "󰀂 \t{ifname}\n名称:\t{essid}\n强度:\t{signaldBm}dBm\n频率:\t{frequency}Ghz\nIP:\t{ipaddr}/{cidr}\n网关:\t{gwaddr}",
+        "format-ethernet": "󰩠  {ifname} ⬇{bandwidthDownBytes} ⬆{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰩠 \t{ifname}\nIP:\t{ipaddr}/{cidr}\n网关:\t{gwaddr}",
+        "format-linked": "󰛵  {ifname} No IP",
+        "tooltip-format-linked": "󰛵 \t{ifname}",
+        "format-disconnected": "󰅛  Disconnected",
+        "tooltip-format-disconnected": ""
+    }
+}

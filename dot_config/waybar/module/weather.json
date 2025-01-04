@@ -1,0 +1,10 @@
+{
+    "custom/weather": {
+        "format": "{}°",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar --location Shanghai --lang zh",
+        "on-click": "wezterm cli split-pane --floating --percent=30 --position=center -- bash -c '~/.config/waybar/scripts/weather.sh; read -p \"按任意键退出...\"'",
+        "return-type": "json"
+    }
+}
