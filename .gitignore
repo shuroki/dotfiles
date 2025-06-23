@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!.env
+!.alias
+!.zshrc
+
+!neofetch
+!neofetch/**
+
+!wezterm
+!wezterm/**
+
+!starship.toml
