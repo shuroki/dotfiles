@@ -5,6 +5,7 @@
 !.env
 !.alias
 !.zshrc
+!.zimrc
 
 !neofetch
 !neofetch/**
