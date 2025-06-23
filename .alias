@@ -1,5 +1,1 @@
-alias ls='lsd'
-alias la='ls -la'
-alias grep='grep --color=auto'
-
 alias lg='lazygit'
